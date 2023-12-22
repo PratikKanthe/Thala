@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Checker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <h1>7hala Calculator</h1>
+      <div class="column">
+        <a href="#" title="Enter a number or text which addition will be 7">
+          <img src="/bulb.svg" alt="bulb" class="bulb" />
+          <p>HINT</p>
+        </a>
+      </div>
+    </nav>
+    <section class="container">
+      <label for="inputText" class="txt-label">Enter Something Here</label>
+      <input
+        type="text"
+        id="inputText"
+        class="txt-box"
+        oninput="clearResult()"
+      />
+      <div class="row">
+        <button onclick="checkText()" class="btn">Check</button>
+        <button class="btn">Share</button>
+      </div>
+
+      <div id="myPopup" class="popup">
+        <div class="confetti" id="celebration">
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+          <div class="confetti-piece"></div>
+        </div>
+        <div class="popup-content">
+          <div id="result"></div>
+          <img src="/thala.png" alt="" width="400" height="400" id="imgThala" />
+          <button
+            id="closePopup"
+            class="btn"
+            style="margin-top: 1rem; z-index: 100000"
+          >
+            Close
+          </button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>© 2023 Pratik Kanthe</p>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
